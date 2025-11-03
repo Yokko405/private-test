@@ -459,6 +459,53 @@
         </div>
       </section>
 
+      <section class="fortune-checker" id="fortune-checker">
+        <div>
+          <h3>あなたの星座を自動判定</h3>
+          <p>
+            生年月日を入力すると、12星座のなかからあなたの星座を自動で判定し、
+            今日の運勢を取得します。
+          </p>
+        </div>
+        <form class="birth-form" id="birth-form" novalidate>
+          <label for="birthdate">生年月日を選択</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+          <button class="btn btn-primary" type="submit">占う</button>
+          <div class="fortune-output" aria-live="polite">
+            <section id="fortune-result" class="fortune-result" hidden>
+              <header class="fortune-meta">
+                <h4 id="zodiac-name"></h4>
+                <p id="fortune-date"></p>
+              </header>
+              <div class="fortune-grid">
+                <article>
+                  <h5>総合運</h5>
+                  <p id="fortune-overall"></p>
+                </article>
+                <article>
+                  <h5>恋愛運</h5>
+                  <p id="fortune-love"></p>
+                </article>
+                <article>
+                  <h5>仕事運</h5>
+                  <p id="fortune-work"></p>
+                </article>
+                <article>
+                  <h5>金運</h5>
+                  <p id="fortune-money"></p>
+                </article>
+              </div>
+              <dl class="fortune-extras">
+                <dt>ラッキーカラー</dt><dd id="fortune-color">--</dd>
+                <dt>ラッキーアクション</dt><dd id="fortune-action">--</dd>
+              </dl>
+            </section>
+          </div>
+        </form>
+      </section>
+
+
+      
       <section id="features">
         <h2 class="section-title">Horoscope Hub が選ばれる理由</h2>
         <div class="features-grid">
